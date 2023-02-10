@@ -13,6 +13,8 @@
 		CC3E03D92996B158005AD9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3E03D72996B158005AD9EF /* Main.storyboard */; };
 		CC3E03DB2996B159005AD9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3E03DA2996B159005AD9EF /* Assets.xcassets */; };
 		CC3E03DE2996B159005AD9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3E03DC2996B159005AD9EF /* LaunchScreen.storyboard */; };
+		CC3E03E62996B84F005AD9EF /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E03E52996B84F005AD9EF /* PokemonListViewController.swift */; };
+		CC3E03E82996B871005AD9EF /* FavoritePokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E03E72996B871005AD9EF /* FavoritePokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CC3E03DA2996B159005AD9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC3E03DD2996B159005AD9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC3E03DF2996B159005AD9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3E03E52996B84F005AD9EF /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		CC3E03E72996B871005AD9EF /* FavoritePokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePokemonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				CC3E03D12996B158005AD9EF /* AppDelegate.swift */,
 				CC3E03D32996B158005AD9EF /* SceneDelegate.swift */,
 				CC3E03D52996B158005AD9EF /* ViewController.swift */,
+				CC3E03E52996B84F005AD9EF /* PokemonListViewController.swift */,
+				CC3E03E72996B871005AD9EF /* FavoritePokemonViewController.swift */,
 				CC3E03D72996B158005AD9EF /* Main.storyboard */,
 				CC3E03DA2996B159005AD9EF /* Assets.xcassets */,
 				CC3E03DC2996B159005AD9EF /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				CC3E03D62996B158005AD9EF /* ViewController.swift in Sources */,
 				CC3E03D22996B158005AD9EF /* AppDelegate.swift in Sources */,
+				CC3E03E62996B84F005AD9EF /* PokemonListViewController.swift in Sources */,
 				CC3E03D42996B158005AD9EF /* SceneDelegate.swift in Sources */,
+				CC3E03E82996B871005AD9EF /* FavoritePokemonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
