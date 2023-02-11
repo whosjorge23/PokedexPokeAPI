@@ -5,26 +5,7 @@ class PokemonListViewController: UITableViewController {
     
     private var pokemonList = [Pokemon]()
     
-    struct Pokemon: Codable {
-        let name: String
-        let url: URL
-    }
     
-    struct PokemonResponse: Codable {
-        let results: [Pokemon]
-    }
-    
-    struct PokemonDetails: Codable {
-        let id: Int
-        let name: String
-        let height: Int
-        let weight: Int
-        let sprites: Sprites
-        
-        struct Sprites: Codable {
-            let front_default: URL?
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,5 +77,19 @@ class PokemonListViewController: UITableViewController {
             }
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedPokemon = pokemonList[indexPath.row]
+        performSegue(withIdentifier: "showPokemonDetail", sender: selectedPokemon)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPokemonDetail" {
+            if let destinationVC = segue.destination as? PokemonDetailViewController,
+                let selectedPokemon = sender as? Pokemon {
+                destinationVC.pokemon = selectedPokemon
+            }
+        }
     }
 }
